@@ -1,23 +1,14 @@
-<div id="dropbox_timelapse_settings">
-    <h4>Dropbox Timelapse Settings</h4>
-
-    <p>You must provide an API Token to be able to upload rendered timelapses to Dropbox.</p>
-    <p>To do this, <a href="https://www.dropbox.com/developers/apps/create" target="_blank">create a Dropbox App</a>,
-        select 'Dropbox API' -> 'App Folder' -> Provide Folder Name.</p>
-    <p>Once the app is created, scroll down to the `OAuth 2` section, and click `Generate Token'. Paste the token here.</p>
+<div id="timelapse_upload_settings">
+    <h4>Timelapse Upload Settings</h4>
 
     <form class="form-horizontal" onsubmit="return false;">
         <p>
-            <label for="dropbox_timelapse_api_token"><strong>API Token</strong></label>
-            <input class="input-text input-block-level" type="text" id="dropbox_timelapse_api_token" data-bind="value: plugin_settings.api_token">
-        </p>
-        <p>
-            <label for="dropbox_timelapse_delete_after_upload"><strong>Delete After Upload?</strong></label>
-            <input class="input-checkbox" type="checkbox" id="dropbox_timelapse_delete_after_upload" data-bind="checked: plugin_settings.delete_after_upload">
+            <label for="timelapse_upload_delete_after_upload"><strong>Delete After Upload?</strong></label>
+            <input class="input-checkbox" type="checkbox" id="timelapse_upload_delete_after_upload" data-bind="checked: plugin_settings.delete_after_upload">
         </p>
         <hr/>
         <h5>Custom Events</h5>
-        <p>Here you can add custom events that will trigger an upload to Dropbox.  You need the event name, as well as the payload key that contains the file path.</p>
+        <p>Here you can add custom events that will trigger an upload.  You need the event name, as well as the payload key that contains the file path.</p>
         <p><b>Note</b>:  The stock timelapse movie done event will ALWAYS trigger an upload, and does not need to be entered here.</p>
         <table class="table table-striped table-hover table-condensed table-hover octolapse-table-list">
             <thead>

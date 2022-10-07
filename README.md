@@ -1,19 +1,17 @@
-# OctoPrint-Dropbox-Timelapse
+# OctoPrint-Timelapse-Upload
 
-Automatically upload rendered timelapses to Dropbox. Can also delete after upload to save space on the Raspberry Pi
-SD Card.
+**TODO:** Describe what your plugin does.
 
 ## Setup
 
-Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
+Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
 or manually using this URL:
 
-    https://github.com/jslay88/OctoPrint-Dropbox-Timelapse/archive/master.zip
+    https://github.com/jslay88/octoprint_timelapse_upload/archive/master.zip
+
+**TODO:** Describe how to install your plugin, if more needs to be done than just installing it via pip or through
+the plugin manager.
 
 ## Configuration
 
-You must provide an API Token to be able to upload rendered timelapses to Dropbox.
-To do this, [create a Dropbox App](https://www.dropbox.com/developers/apps/create)
-select `Dropbox API` -> `App Folder` -> Provide Folder Name.
-Once the app is created, scroll down to the `OAuth 2` section, and click `Generate Token`. Paste the token into the
-settings pane.
+**TODO:** Describe your plugin's configuration options (if any).
